@@ -1,12 +1,14 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial; 
+    background-color: #f5f5f5;  
+    font-family: Arial, Helvetica, sans-serif; /* another word form */ 
     margin: 0;
     padding: 20px;
 }
 h1 {
     text-align: center;
-    color: blue;
+    color: #0066cc; 
+    font-size: 36px; 
+    margin-bottom: 10px; 
 }
 h2 {
     text-align: center;
@@ -14,15 +16,18 @@ h2 {
 }
 p {
     text-align: center;
-    color: #555;
+    color: #666;  
+    font-size: 16px;  
+    margin-bottom: 30px; 
 }
 form {
     background-color: white;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border: 1px solid gray;
+    width: 550px;  
+    margin: 0 auto; 
+    padding: 25px; 
+    border: 1px solid #ccc;  
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
 }
 div {
     margin-bottom: 15px;
