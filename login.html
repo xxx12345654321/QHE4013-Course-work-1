@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+    <button onclick="location.href='index.html'">home page</button>
+
+    <h2>login</h2>
+    <p>testid:testID1    testpassword:key123456</p>
+
+    <form id="loginform">
+        <div>
+            <label>username</label><br>
+            <input type="text" id="username">
+        </div>
+        <br>
+        
+        <div>
+            <label>password</label><br>
+            <input type="password" id="password">
+        </div>
+        <br>
+
+        <button type="submit">login</button>
+    </form>
+    <br>
+    <button onclick="location.href='register.html'">no account? register here</button>
+
+    <script>
+    const loginform = document.getElementById("loginform");
+
+    loginform.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const testid = "testID1";
+        const testpassword = "key123456";
+    
+        if(username!==testid){
+            alert("wrong username");
+        } else if(password!==testpassword){
+            alert("wrong password");
+        } else {
+            alert("login successful");
+        };
+    });
+    </script>
+</body>
+</html>
