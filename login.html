@@ -6,28 +6,30 @@
     <link rel="stylesheet" href="stylereglog.css">
 </head>
 <body>
-    <button onclick="location.href='index.html'">home page</button>
+    <div class="container">
+        <button onclick="location.href='index.html'">home page</button>
 
-    <h2>login</h2>
-    <p>testid:testID1    testpassword:key123456</p>
+        <h2>login</h2>
+        <p>testid:testID1    testpassword:key123456</p>
 
-    <form id="loginform">
-        <div>
-            <label>username</label><br>
-            <input type="text" id="username">
-        </div>
+        <form id="loginform">
+            <div>
+                <label>username</label><br>
+                <input type="text" id="username">
+            </div>
+            <br>
+            
+            <div>
+                <label>password</label><br>
+                <input type="password" id="password">
+            </div>
+            <br>
+
+            <button type="submit">login</button>
+        </form>
         <br>
-        
-        <div>
-            <label>password</label><br>
-            <input type="password" id="password">
-        </div>
-        <br>
-
-        <button type="submit">login</button>
-    </form>
-    <br>
-    <button onclick="location.href='register.html'">no account? register here</button>
+        <button onclick="location.href='register.html'">no account? register here</button>
+    </div>
 
     <script>
     const loginform = document.getElementById("loginform");
