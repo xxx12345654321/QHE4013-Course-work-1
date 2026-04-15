@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*初始化页面默认*/
+
+body {
+  background-image: url(banner.jpg);
+  background-size: cover;/*图片铺满*/
+  background-position: center;/*图片居中，否则会偏，没办法整个页面都是这个图做背景*/
+  min-height: 100vh;/*占满整个屏幕高度，让下面不留空白*/
+  display: flex;/*使居中，否则登录框不在中间*/
+  justify-content: center;/*卡片水平居中，避免贴在左边*/
+  align-items: center;/*卡片垂直居中，避免贴在上面*/
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85); /*白色半透明*/
+  width: 100%;
+  max-width: 400px;      
+  padding: 30px;           
+  border-radius: 8px;/*稍微圆角*/
+}/*白色半透明卡片，否则字看不清楚*/
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}/*标题在正中间*/
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}/*输入框长一点，让提示词都能看到*/
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}/*按钮蓝底白字*/
+
