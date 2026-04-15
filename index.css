@@ -14,69 +14,69 @@ a {
     color: #ffffff;
 }
 
-/* 导航栏样式：设置为悬浮在Banner上方 */
+/* 导航栏样式 */
 .header {
-    position: absolute; 
-    top: 0; /* 顶部对齐 */
-    left: 0; /* 左边对齐 */
-    width: 100%; 
-    height: 80px; /* 导航栏高度 */
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; /* 垂直方向居中对齐 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 0 40px;
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 100; 
+    z-index: 100;
 }
 
-/* 左侧 Logo 和 网站名称区域 */
+/* 左侧 Logo 和 文字 */
 .logo-area {
     display: flex;
-    align-items: center; /* 垂直居中对齐 */
+    align-items: center;
 }
 
 .logo {
     height: 60px;
-    margin-right: 15px; 
+    margin-right: 15px;
 }
 
 .site-name {
     font-size: 20px;
-    font-weight: bold;  /* 加粗显示 */
-    letter-spacing: 1px; 
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* 右侧导航菜单 */
 .nav-menu {
-    display: flex; 
+    display: flex;
 }
 
 .nav-menu a {
     margin-left: 50px;
     font-size: 18px;
-    transition: color 0.3s; 
+    transition: color 0.3s;
 }
 
 .nav-menu a:hover {
-    color: #cccccc; 
+    color: #cccccc;
 }
 
 /* 全屏 Banner 区域 */
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* 占满屏幕高度 */
     background-image: url('images/banner.jpg');
-    background-size: cover; 
-    background-position: center; /* 图片居中显示 */
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; /* 水平方向居中对齐 */
-    text-align: center; /* 文字居中对齐 */
-    position: relative; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-/* Banner文字部分 */
+/* 中间的文字部分 */
 .banner-text h1 {
     font-size: 78px;
     margin-bottom: 15px;
@@ -89,17 +89,24 @@ a {
     letter-spacing: 1px;
 }
 
+/* 两个按钮 */
+.button-group a {
+    display: inline-block;
+    padding: 12px 40px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    transition: background 0.3s;
+}
 
-/* 左边按钮样式 */
 .btn-left {
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .btn-left:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* 右边按钮样式 */
 .btn-right {
     background-color: rgba(255, 255, 255, 0.15);
 }
@@ -108,11 +115,11 @@ a {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* 底部样式 */
+/* 页脚样式 */
 .footer {
     background-color: #1a1a1a;
     color: #888888;
-    text-align: center; /* 文字居中对齐 */
-    padding: 25px 0; 
+    text-align: center;
+    padding: 25px 0;
     font-size: 14px;
 }
