@@ -14,7 +14,7 @@ a {
     color: #ffffff;
 }
 
-/* 导航栏样式 */
+/* 导航栏样式  */
 .header {
     position: absolute;
     top: 0;
@@ -76,7 +76,6 @@ a {
     position: relative;
 }
 
-/* 中间的文字部分 */
 .banner-text h1 {
     font-size: 78px;
     margin-bottom: 15px;
