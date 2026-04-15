@@ -1,14 +1,24 @@
+* {
+    box-sizing: border-box; }
 body {
-    background-color: #f5f5f5;  
-    font-family: Arial, Helvetica, sans-serif; /* another word form */ 
+    background-color: #f8f9fa;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  /* update word too */
     margin: 0;
     padding: 20px;
+    line-height: 1.6;  /* word height */
 }
+/* add container */
+.container {
+    max-width: 800px;  
+    margin: 0 auto; 
+    padding: 20px;}
 h1 {
     text-align: center;
-    color: #0066cc; 
-    font-size: 36px; 
-    margin-bottom: 10px; 
+    color: #0066cc;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;  
+    border-bottom: 2px solid #eaeaea;
 }
 h2 {
     text-align: center;
@@ -20,14 +30,12 @@ p {
     font-size: 16px;  
     margin-bottom: 30px; 
 }
-form {
+.form-container  /* instead of form */{
     background-color: white;
-    width: 550px;  
-    margin: 0 auto; 
-    padding: 25px; 
-    border: 1px solid #ccc;  
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);  
+    padding: 30px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    border: 1px solid #e0e0e0; 
 }
 .form-row {
     margin-bottom: 20px; 
