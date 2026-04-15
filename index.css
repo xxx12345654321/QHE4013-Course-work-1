@@ -29,7 +29,7 @@ a {
     z-index: 100;
 }
 
-/* 左侧 Logo 和 文字 */
+/* 左侧 Logo和文字 */
 .logo-area {
     display: flex;
     align-items: center;
