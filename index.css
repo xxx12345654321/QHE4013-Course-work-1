@@ -1,4 +1,5 @@
 * {
+    /* 清除边距 */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,73 +11,73 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;/* 去掉链接的下划线 */
     color: #ffffff;
 }
 
-/* 导航栏样式 */
+/* 导航栏样式：设置为绝对定位悬浮在Banner上方 */
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    position: absolute; /* 绝对定位，让导航栏悬浮在背景图上 */
+    top: 0; /* 顶部对齐 */
+    left: 0; /* 左边对齐 */
+    width: 100%; /* 占满整个宽度 */
+    height: 80px; /* 导航栏高度 */
+    display: flex; /* 使用flex布局，让左右两边的内容自动对齐 */
+    justify-content: space-between; /* 左右两边的内容分别靠边对齐 */
+    align-items: center; /* 垂直方向居中对齐 */
     padding: 0 40px;
     background-color: rgba(0, 0, 0, 0.2);
-    z-index: 100;
+    z-index: 100; /* 设置高层级，确保在背景图之上 */
 }
 
-/* 左侧 Logo和文字 */
+/* 左侧 Logo 和 网站名称区域 */
 .logo-area {
     display: flex;
-    align-items: center;
+    align-items: center; /* 垂直居中对齐 */
 }
 
 .logo {
     height: 60px;
-    margin-right: 15px;
+    margin-right: 15px; /* logo和文字之间留点空隙 */
 }
 
 .site-name {
     font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
+    font-weight: bold;  /* 加粗显示 */
+    letter-spacing: 1px; /* 字母间距调节 */
 }
 
 /* 右侧导航菜单 */
 .nav-menu {
-    display: flex;
+    display: flex; /* 水平排列菜单项 */
 }
 
 .nav-menu a {
     margin-left: 50px;
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.3s; /* 鼠标悬浮时的颜色过渡效果 */
 }
 
 .nav-menu a:hover {
-    color: #cccccc;
+    color: #cccccc; /* 鼠标放上去变成浅灰色 */
 }
 
 /* 全屏 Banner 区域 */
 .banner {
     width: 100%;
-    height: 100vh; /* 占满屏幕高度 */
+    height: 100vh;
     background-image: url('images/banner.jpg');
-    background-size: cover;
-    background-position: center;
+    background-size: cover; /* 图片缩放以覆盖整个区域，保持比例 */
+    background-position: center; /* 图片居中显示 */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
+    flex-direction: column; /* 垂直排列内容 */
+    justify-content: center; /* 垂直方向居中对齐 */
+    align-items: center; /* 水平方向居中对齐 */
+    text-align: center; /* 文字居中对齐 */
+    position: relative; /* 相对定位 */
 }
 
-/* 文字部分 */
+/* Banner文字部分 */
 .banner-text h1 {
     font-size: 78px;
     margin-bottom: 15px;
@@ -99,14 +100,16 @@ a {
     transition: background 0.3s;
 } */
 
+/* 左边按钮样式 */
 .btn-left {
-    background-color: transparent;
+    background-color: transparent; /* 完全透明，只有边框 */
 }
 
 .btn-left:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* 悬浮时变成半透明白色 */
 }
 
+/* 右边按钮样式 */
 .btn-right {
     background-color: rgba(255, 255, 255, 0.15);
 }
@@ -119,7 +122,7 @@ a {
 .footer {
     background-color: #1a1a1a;
     color: #888888;
-    text-align: center;
-    padding: 25px 0;
+    text-align: center; /* 文字居中对齐 */
+    padding: 25px 0; /* 上下留25px空间 */
     font-size: 14px;
 }
