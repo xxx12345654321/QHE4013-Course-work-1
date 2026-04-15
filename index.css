@@ -14,7 +14,7 @@ a {
     color: #ffffff;
 }
 
-/* 导航栏样式  */
+/* 导航栏样式 */
 .header {
     position: absolute;
     top: 0;
@@ -76,6 +76,7 @@ a {
     position: relative;
 }
 
+/* 文字部分 */
 .banner-text h1 {
     font-size: 78px;
     margin-bottom: 15px;
@@ -89,14 +90,14 @@ a {
 }
 
 /* 两个按钮 */
-.button-group a {
+/* .button-group a {
     display: inline-block;
     padding: 12px 40px;
     margin: 0 10px;
     font-size: 16px;
     border: 1px solid #ffffff;
     transition: background 0.3s;
-}
+} */
 
 .btn-left {
     background-color: transparent;
