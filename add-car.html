@@ -2,50 +2,49 @@
 <html>
 <head>
     <title>AutoMall - Add Car</title>
-     <!-- for CSS -->
-   <link rel="stylesheet" href="add-car-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- for CSS -->
+    <link rel="stylesheet" href="add-car-style.css">
 </head>
 <body>
-    <h1>AutoMall</h1>
-    <h2>Add a Car for Sale</h2>
-    <p>Fill in the details about the car you want to sell.</p>
-    <form id="addCarForm">
-         <!-- car'color -->
-        <div>
-            <div class="form-row">
-            <label>Car Color:</label>
-            <input type="text" id="colorInput">
+    <div class="container"><!--add containe and its form -->
+        <h1>AutoMall</h1>
+        <h2>Add a Car for Sale</h2>
+        <p>Fill in the details about the car you want to sell.</p>
+        <div class="form-container">
+            <form id="addCarForm">
+                <!-- car'color -->
+                <div class="form-group">
+                    <label for="colorInput">Car Color:</label>
+                    <input type="text" id="colorInput" class="form-control">
+                </div>    
+                <!-- model -->
+                <div class="form-group">
+                    <label for="modelInput">Car Model:</label>
+                    <input type="text" id="modelInput" class="form-control">
+                </div>       
+                <!-- car'number -->
+                <div class="form-group">
+                    <label for="yearInput">Year:</label>
+                    <input type="number" id="yearInput" class="form-control">
+                </div>
+                <!-- seller city -->
+                <div class="form-group">
+                    <label for="locationInput">location:</label>
+                    <input type="text" id="locationInput" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="priceInput">Price (RMB):</label>
+                    <input type="number" id="priceInput" class="form-control">
+                </div>
+                <!-- car images -->
+                <div class="form-group">
+                    <label for="pictureInput">Image of car :</label>
+                    <input type="file" id="pictureInput" class="form-control">
+                </div>
+                <button type="button" class="btn">Add Car</button>
+            </form>
         </div>
-        <!-- model -->
-        <div>
-            <div class="form-row">
-            <label>Car Model:</label>
-            <input type="text" id="modelInput">
-        </div>
-        <!-- car'number -->
-        <div>
-            <div class="form-row">
-            <label>Year:</label>
-            <input type="number" id="yearInput">
-        </div>
-        <!-- seller city -->
-        <div>
-            <div class="form-row">
-            <label>location:</label>
-            <input type="text" id="locationInput">
-        </div>
-        <div>
-            <div class="form-row">
-            <label>Price (RMB):</label>
-            <input type="number" id="priceInput">
-        </div>
-        <!-- car images -->
-        <div>
-            <div class="form-row">
-            <label>Image of car :</label>
-            <input type="file" id="pictureInput">
-        </div>
-        <button>Add Car</button>
-    </form>
+    </div>
 </body>
 </html>
