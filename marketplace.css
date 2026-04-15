@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f8fa;
+    color: #333333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 顶部导航栏 */
+.header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: #222222;
+    color: #ffffff;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.site-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-menu a {
+    margin-left: 30px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.nav-menu a:hover {
+    color: #ff6600;
+}
+
+/* 筛选栏 */
+.filter-bar {
+    width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    border-bottom: 2px solid #ff6600;
+    font-size: 14px;
+}
+
+.filter-bar span {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.filter-active {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* 车辆列表容器 */
+.car-list {
+    width: 1200px;
+    margin: 0 auto 50px auto;
+    display: flex;
+    flex-wrap: wrap; /* 允许换行 */
+    justify-content: flex-start;
+}
+
+/* 车辆卡片 */
+.car-card {
+    width: 285px; /* 一行放4个，留出间距 */
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    transition: transform 0.3s; /* 鼠标悬浮动画 */
+}
+
+.car-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.car-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 车辆图片区 */
+.car-image {
+    width: 100%;
+    height: 190px; /* 固定图片高度 */
+    overflow: hidden;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 车辆信息区 */
+.car-info {
+    padding: 15px;
+}
+
+.car-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.car-desc {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 12px;
+}
+
+.car-price {
+    font-size: 20px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.price-unit {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* 分页组件 */
+.pagination {
+    width: 1200px;
+    margin: 30px auto 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-btn,
+.page-num {
+    display: inline-block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #666666;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    font-size: 14px;
+    min-width: 36px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.page-btn {
+    padding: 8px 16px;
+    min-width: auto;
+}
+
+.page-btn:hover,
+.page-num:hover {
+    color: #ff6600;
+    border-color: #ff6600;
+    background-color: #fff5f0;
+}
+
+.page-num.active {
+    color: #ffffff;
+    background-color: #ff6600;
+    border-color: #ff6600;
+}
+
+.page-dots {
+    color: #999999;
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+/* 底部样式 */
+.footer {
+    background-color: #1a1a1a;
+    color: #888888;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
