@@ -5,58 +5,59 @@
     <link rel="stylesheet" href="stylereglog.css">
 </head>
 <body>
-    <button onclick="location.href='index.html'">home page</button>
+    <div class="container">
+        <button onclick="location.href='index.html'">home page</button>
 
-    <h2>registration</h2>
-    <form id="registerform">
-        <div>
-            <label>full name</label><br>
-            <input type="text" id="name" placeholder="letters and spaces only">
-            <div id="wrong name"></div>
-        </div>
-        <br>
+        <h2>registration</h2>
+        <form id="registerform">
+            <div>
+                <label>full name</label><br>
+                <input type="text" id="name" placeholder="letters and spaces only">
+                <div id="wrong name"></div>
+            </div>
+            <br>
 
-        <div>
-            <label>address</label><br>
-            <input type="text" id="address" placeholder="letters spaces numbers only">
-            <div id="wrong address"></div>
-        </div>
-        <br>
-        
-        <div>
-            <label>phone number</label><br>
-            <input type="text" id="phone" placeholder="Chinese mainland only">
-            <div id="wrong phone number"></div>
-        </div>
-        <br>
-        
-        <div>
-            <label>email</label><br>
-            <input type="text" id="email" placeholder="@xx.com or @xx.cn only">
-            <div id="wrong email"></div>
-        </div>
-        <br>
-        
-        <div>
-            <label>username</label><br>
-            <input type="text" id="username" placeholder="at least 6 letters and numbers">
-            <div id="wrong username"></div>
-        </div>
-        <br>
-        
-        <div>
-            <label>password</label><br>
-            <input type="password" id="password" placeholder="at least 6 letters and numbers">
-            <div id="wrong password"></div>
-        </div>
-        <br>
+            <div>
+                <label>address</label><br>
+                <input type="text" id="address" placeholder="letters spaces numbers only">
+                <div id="wrong address"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>phone number</label><br>
+                <input type="text" id="phone" placeholder="Chinese mainland only">
+                <div id="wrong phone number"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>email</label><br>
+                <input type="text" id="email" placeholder="@xx.com or @xx.cn only">
+                <div id="wrong email"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>username</label><br>
+                <input type="text" id="username" placeholder="at least 6 letters and numbers">
+                <div id="wrong username"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>password</label><br>
+                <input type="password" id="password" placeholder="at least 6 letters and numbers">
+                <div id="wrong password"></div>
+            </div>
+            <br>
 
-        <button type="submit">register</button>
-    </form>
+            <button type="submit">register</button>
+        </form>
 
-    <br>
-    <button onclick="location.href='login.html'">already have an account? login here</button> 
-
+        <br>
+        <button onclick="location.href='login.html'">already have an account? login here</button> 
+    </div>
     <script>
     const form =document.getElementById('registerform');
     
