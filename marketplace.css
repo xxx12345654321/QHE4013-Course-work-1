@@ -78,7 +78,8 @@ a {
     width: 1200px;
     margin: 0 auto 50px auto;
     display: flex;
-    flex-wrap: wrap; /* 允许换行 */
+    flex-wrap: wrap;
+    /* 允许换行 */
     justify-content: flex-start;
 }
 
@@ -99,7 +100,7 @@ a {
 
 .car-card:hover {
     transform: translateY(-5px); /* 鼠标放上去卡片上浮 */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* 车辆图片区 */
@@ -159,7 +160,8 @@ a {
     gap: 8px;
 }
 
-.page-btn, .page-num {
+.page-btn,
+.page-num {
     display: inline-block;
     padding: 8px 12px;
     text-decoration: none;
@@ -177,7 +179,8 @@ a {
     min-width: auto;
 }
 
-.page-btn:hover, .page-num:hover {
+.page-btn:hover,
+.page-num:hover {
     color: #ff6600;
     border-color: #ff6600;
     background-color: #fff5f0;
@@ -227,7 +230,7 @@ a {
 }
 
 .nav-menu a:hover {
-    color: #cccccc; /* 鼠标放上去变灰 */
+    color: #cccccc;
 }
 
 /* 全屏 Banner 区域 */
