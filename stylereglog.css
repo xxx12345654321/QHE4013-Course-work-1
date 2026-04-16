@@ -1,3 +1,5 @@
+/*Reference Book: A Detailed Guide to HTML5 + CSS3 + JavaScript (Practical Edition), 
+Tsinghua University Press, ISBN 978-7-302-56027-2, Chapters 16–17*/
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +21,7 @@ body {
   width: 100%;
   max-width: 400px;      
   padding: 30px;           
-  border-radius: 8px;/*稍微圆角*/
+  border-radius: 5px;/*稍微圆角*/
 }/*白色半透明卡片，否则字看不清楚*/
 
 h2 {
@@ -28,20 +30,17 @@ h2 {
 }/*标题在正中间*/
 
 input {
-  width: 100%;
+  width: 95%;
   padding: 10px;
-  margin: 6px 0 14px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}/*输入框长一点，让提示词都能看到*/
+  border-radius: 5px;
+}
 
 button {
-  width: 100%;
-  padding: 10px;
+  width: 95%;
+  padding: 11px;
   background-color: #007bff;
   color: white;
-  border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   margin-bottom: 8px;
 }/*按钮蓝底白字*/
 
