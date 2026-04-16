@@ -73,6 +73,12 @@
     form.addEventListener('submit',function(e){
         e.preventDefault();
 
+        /*AI Usage Notes:During development, 
+        I found that the page refreshes immediately 
+        after incorrect input, making the alert message 
+        disappear too quickly to read. I consulted AI 
+        about this issue, and it provided the revision in this line.*/
+
         let name = document.getElementById('name').value;
         let address = document.getElementById('address').value;
         let phone = document.getElementById('phone').value;
