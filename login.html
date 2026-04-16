@@ -10,6 +10,12 @@
         <button onclick="location.href='index.html'">home page</button>
 
         <h2>login</h2>
+
+        <!--TA assistance notes:I originally thought it was 
+        impossible to implement the judgment without backend 
+        code. After asking Ms. Jiayu for help, she introduced 
+        me to the method of using a test account and password.-->
+
         <p>testid:testID1    testpassword:key123456</p>
 
         <form id="loginform">
@@ -37,6 +43,12 @@
     loginform.addEventListener("submit", function(e) {
         e.preventDefault();
 
+        /*AI Usage Notes:During development, 
+        I found that the page refreshes immediately 
+        after incorrect input, making the alert message 
+        disappear too quickly to read. I consulted AI 
+        about this issue, and it provided the revision in this line.*/
+
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
@@ -49,6 +61,7 @@
             alert("wrong password");
         } else {
             alert("login successful");
+            window.location.href = "add-car.html";
         };
     });
     </script>
