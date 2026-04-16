@@ -9,35 +9,51 @@
 </head>
 
 <body>
-    <!-- 顶部导航栏 -->
+
+    <!-- Top Navigation bar -->
     <div class="header">
-        <!-- logo区域 -->
+        <!-- Left logo Area -->
         <div class="logo-area">
             <img src="images/logo.png" alt="Logo" class="logo">
             <span class="site-name">AutoMall</span>
         </div>
-        <!-- 导航菜单 -->
-        <div class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="marketplace.html">Marketplace</a>
-            <a href="#">screen</a>
-            <a href="#">Sell a Car</a>
+        <!-- Right-Navigation -->
+        <div class="nav-menu-container">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="#">screen</a>
+                <a href="#">Seller Entrance</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()"></div>
+            <div class="mobile-nav-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="#">screen</a>
+                <a href="#">Seller Entrance</a>
+            </div>
         </div>
     </div>
 
-    <!-- 全屏Banner区域 -->
+    <!-- Banner Area -->
     <div class="banner">
         <div class="banner-text">
             <h1>PREMIUM USED CARS</h1>
             <p>Smart & Reliable Vehicle Platform</p>
-
         </div>
     </div>
 
-    <!-- 页面底部 -->
+    <!-- Footer -->
     <div class="footer">
         <p>&copy; 2026 Used Car Trading Platform. All rights reserved.</p>
     </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
 
 </body>
 
