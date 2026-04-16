@@ -13,21 +13,28 @@
             <img src="images/logo.png" alt="Logo" class="logo">
             <span class="site-name">AutoMall</span>
         </div>
-        <div class="nav-menu">
-            <a href="index.html">Home</a>
-            <a href="marketplace.html" style="color:#ff6600;">Marketplace</a>
-            <a href="#">screen</a>
-            <a href="#">Sell a Car</a>
-            <a href="#">Login</a>
+        <div class="nav-menu-container">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html" style="color:#ff6600;">Marketplace</a>
+                <a href="#">screen</a>
+                <a href="#">Sell a Car</a>
+                <a href="#">Login</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()"></div>
+            <!-- 移动端导航菜单 -->
+            <div class="mobile-nav-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html" style="color:#ff6600;">Marketplace</a>
+                <a href="#">screen</a>
+                <a href="#">Sell a Car</a>
+                <a href="#">Login</a>
+            </div>
         </div>
     </div>
 
     <div class="filter-bar">
         <span class="filter-active">All Cars (213661)</span>
-        <!-- <span>Brand Certified</span>
-        <span>Cloud Showroom</span>
-        <span>Member Merchants</span>
-        <span>Special Offers</span> -->
     </div>
 
     <div class="car-list">
@@ -176,6 +183,13 @@
     <div class="footer">
         <p>&copy; 2026 Used Car Trading Platform. All rights reserved.</p>
     </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>
