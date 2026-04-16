@@ -1,3 +1,12 @@
+/*code source statement:To ensure consistency in visual style between the information
+filtering results page and the Marketplace page, the following
+code was adapted by Lixuan Feng based on the marketplace.css file
+downloaded from Zichun Hu’s work. The code was streamlined, 
+and adjustments were made to the back button at the bottom; 
+all other sections remain unchanged and are credited to Zichun Hu. 
+Since the information filtering results are the responsibility of 
+Lixuan Feng, this code was uploaded by Lixuan Feng. 
+This statement is hereby issued.*/
 * {
     margin: 0;
     padding: 0;
