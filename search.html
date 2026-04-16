@@ -47,6 +47,11 @@
         let type = document.getElementById('type').value;
         let year = document.getElementById('year').value;
         location.href = `result.html?type=${type}&year=${year}`;
+        /*AI Usage Notes:During development, to ensure the search results are styled with a consistent CSS file, 
+        I decided to separate the search and result functions into two pages, 
+        implementing the search logic in result.html instead of search.html.However, this required passing 
+        the two input parameters to the second page. The AI provided a method to store 
+        the  type  and  year  parameters from the URL into variables.*/
     }
     </script>
 </body>
