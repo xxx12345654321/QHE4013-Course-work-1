@@ -15,7 +15,6 @@ a {
     color: inherit;
 }
 
-/* 顶部导航栏 */
 .header {
     width: 100%;
     height: 80px;
@@ -52,7 +51,6 @@ a {
     color: #ff6600;
 }
 
-/* 筛选栏 */
 .filter-bar {
     width: 1200px;
     margin: 20px auto;
@@ -73,26 +71,23 @@ a {
     font-weight: bold;
 }
 
-/* 车辆列表容器 */
 .car-list {
     width: 1200px;
     margin: 0 auto 50px auto;
     display: flex;
-    flex-wrap: wrap; /* 允许换行 */
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-/* 车辆卡片 */
 .car-card {
-    width: 285px; /* 一行放4个，留出间距 */
+    width: 285px;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 4px;
-    transition: transform 0.3s; /* 鼠标悬浮动画 */
+    transition: transform 0.3s;
 }
 
-/* 去除每行最后一个卡片的右边距 */
 .car-card:nth-child(4n) {
     margin-right: 0;
 }
@@ -102,10 +97,9 @@ a {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* 车辆图片区 */
 .car-image {
     width: 100%;
-    height: 190px; /* 固定图片高度 */
+    height: 190px;
     overflow: hidden;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -117,7 +111,6 @@ a {
     object-fit: cover;
 }
 
-/* 车辆信息区 */
 .car-info {
     padding: 15px;
 }
@@ -129,7 +122,7 @@ a {
     color: #222;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* 文字太长显示省略号 */
+    text-overflow: ellipsis; 
 }
 
 .car-desc {
@@ -149,7 +142,6 @@ a {
     font-weight: normal;
 }
 
-/* 分页组件 */
 .pagination {
     width: 1200px;
     margin: 30px auto 50px auto;
@@ -197,7 +189,7 @@ a {
     font-size: 14px;
 }
 
-/* 页脚样式 */
+/* 底部样式 */
 .footer {
     background-color: #1a1a1a;
     color: #888888;
