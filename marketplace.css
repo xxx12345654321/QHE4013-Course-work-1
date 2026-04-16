@@ -15,7 +15,7 @@ a {
     color: inherit;
 }
 
-/* 顶部导航栏 (复用首页样式，但改为深色底) */
+/* 顶部导航栏 */
 .header {
     width: 100%;
     height: 80px;
@@ -78,8 +78,7 @@ a {
     width: 1200px;
     margin: 0 auto 50px auto;
     display: flex;
-    flex-wrap: wrap;
-    /* 允许换行 */
+    flex-wrap: wrap; /* 允许换行 */
     justify-content: flex-start;
 }
 
@@ -90,7 +89,7 @@ a {
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 4px;
-    transition: transform 0.3s; /* 悬浮动画 */
+    transition: transform 0.3s; /* 鼠标悬浮动画 */
 }
 
 /* 去除每行最后一个卡片的右边距 */
@@ -99,7 +98,7 @@ a {
 }
 
 .car-card:hover {
-    transform: translateY(-5px); /* 鼠标放上去卡片上浮 */
+    transform: translateY(-5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -115,7 +114,7 @@ a {
 .car-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* 让图片不变形铺满 */
+    object-fit: cover;
 }
 
 /* 车辆信息区 */
@@ -150,7 +149,7 @@ a {
     font-weight: normal;
 }
 
-/* 分页组件样式 */
+/* 分页组件 */
 .pagination {
     width: 1200px;
     margin: 30px auto 50px auto;
@@ -196,95 +195,6 @@ a {
     color: #999999;
     padding: 0 5px;
     font-size: 14px;
-}
-
-/* 页脚样式 */
-.footer {
-    background-color: #1a1a1a;
-    color: #888888;
-    text-align: center;
-    padding: 25px 0;
-    font-size: 14px;
-}
-
-.logo {
-    height: 60px;
-    margin-right: 15px;
-}
-
-.site-name {
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 1px;
-}
-
-/* 右侧导航菜单 */
-.nav-menu {
-    display: flex;
-}
-
-.nav-menu a {
-    margin-left: 50px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #cccccc;
-}
-
-/* 全屏 Banner 区域 */
-.banner {
-    width: 100%;
-    height: 100vh; /* 占满屏幕高度 */
-    background-image: url('images/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-/* 文字部分 */
-.banner-text h1 {
-    font-size: 78px;
-    margin-bottom: 15px;
-    letter-spacing: 3px;
-}
-
-.banner-text p {
-    font-size: 28px;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
-}
-
-/* 两个按钮 */
-.button-group a {
-    display: inline-block;
-    padding: 12px 40px;
-    margin: 0 10px;
-    font-size: 16px;
-    border: 1px solid #ffffff;
-    transition: background 0.3s;
-}
-
-.btn-left {
-    background-color: transparent;
-}
-
-.btn-left:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.btn-right {
-    background-color: rgba(255, 255, 255, 0.15);
-}
-
-.btn-right:hover {
-    background-color: rgba(255, 255, 255, 0.3);
 }
 
 /* 页脚样式 */
