@@ -89,7 +89,7 @@ a {
     margin-bottom: 20px;
     background-color: #ffffff;
     border-radius: 4px;
-    transition: transform 0.3s; /* 鼠标悬浮动画 */
+    transition: transform 0.3s; /* 悬浮动画 */
 }
 
 /* 去除每行最后一个卡片的右边距 */
@@ -129,7 +129,7 @@ a {
     color: #222;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; 
+    text-overflow: ellipsis; /* 文字太长显示省略号 */
 }
 
 .car-desc {
@@ -227,7 +227,7 @@ a {
 }
 
 .nav-menu a:hover {
-    color: #cccccc;
+    color: #cccccc; /* 鼠标放上去变灰 */
 }
 
 /* 全屏 Banner 区域 */
@@ -245,7 +245,7 @@ a {
     position: relative;
 }
 
-/* 中间的文字部分 */
+/* 文字部分 */
 .banner-text h1 {
     font-size: 78px;
     margin-bottom: 15px;
