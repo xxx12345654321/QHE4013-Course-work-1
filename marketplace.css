@@ -27,6 +27,11 @@ a {
     color: #ffffff;
 }
 
+/* 移动端菜单容器 */
+.nav-menu-container {
+    position: relative;
+}
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -204,4 +209,212 @@ a {
     text-align: center;
     padding: 25px 0;
     font-size: 14px;
+}
+
+/* 响应式设计 - 平板设备 (1024px以下屏幕) */
+@media screen and (max-width: 1024px) {
+    /* 导航栏适配：缩小尺寸，显示移动端菜单按钮 */
+    .header {
+        padding: 0 20px;      /* 减小导航栏内边距 */
+        height: 70px;         /* 降低导航栏高度 */
+    }
+    
+    .logo {
+        height: 45px;         /* 缩小logo尺寸 */
+    }
+    
+    .site-name {
+        font-size: 16px;      /* 缩小网站名称字体 */
+    }
+    
+    .nav-menu {
+        display: none;        /* 隐藏桌面端导航菜单 */
+    }
+    
+    .mobile-menu-btn {
+        display: block;       /* 显示移动端菜单按钮 */
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-image: url('images/移动端菜单按钮.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    /* 内容区域适配：调整宽度和布局 */
+    .filter-bar {
+        width: 95%;           /* 筛选栏宽度自适应 */
+        margin: 15px auto;
+        padding: 12px 15px;
+        font-size: 13px;      /* 缩小字体 */
+    }
+    
+    .car-list {
+        width: 95%;           /* 车辆列表宽度自适应 */
+        margin: 0 auto 30px auto;
+        justify-content: center;
+    }
+    
+    /* 车辆卡片布局：一行3个 */
+    .car-card {
+        width: 220px;         /* 调整卡片宽度 */
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .car-card:nth-child(4n) {
+        margin-right: 15px;   /* 重置第4个卡片的右边距 */
+    }
+    
+    .car-card:nth-child(3n) {
+        margin-right: 0;      /* 第3个卡片去掉右边距(一行3个) */
+    }
+    
+    .car-image {
+        height: 150px;        /* 缩小图片高度 */
+    }
+    
+    .pagination {
+        width: 95%;           /* 分页组件宽度自适应 */
+        margin: 20px auto 30px auto;
+    }
+    
+    .page-btn,
+    .page-num {
+        padding: 6px 10px;    /* 缩小分页按钮 */
+        font-size: 13px;
+        min-width: 32px;
+    }
+}
+
+/* 响应式设计 - 手机设备 (480px以下屏幕) */
+@media screen and (max-width: 480px) {
+    /* 导航栏进一步缩小 */
+    .header {
+        padding: 0 15px;       /* 进一步减小内边距 */
+        height: 60px;          /* 进一步降低导航栏高度 */
+    }
+    
+    .logo {
+        height: 35px;          /* 进一步缩小logo */
+        margin-right: 10px;
+    }
+    
+    .site-name {
+        font-size: 14px;       /* 进一步缩小网站名称字体 */
+    }
+    
+    /* 筛选栏适配：允许换行 */
+    .filter-bar {
+        width: 95%;            /* 筛选栏宽度自适应 */
+        margin: 10px auto;
+        padding: 10px 12px;
+        font-size: 12px;       /* 进一步缩小字体 */
+        flex-wrap: wrap;       /* 允许换行 */
+    }
+    
+    .car-list {
+        width: 95%;            /* 车辆列表宽度自适应 */
+        margin: 0 auto 20px auto;
+        justify-content: center;
+    }
+    
+    /* 车辆卡片布局：一行2个 */
+    .car-card {
+        width: 160px;          /* 进一步缩小卡片宽度 */
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .car-card:nth-child(3n) {
+        margin-right: 10px;    /* 重置第3个卡片的右边距 */
+    }
+    
+    .car-card:nth-child(2n) {
+        margin-right: 0;       /* 第2个卡片去掉右边距(一行2个) */
+    }
+    
+    .car-image {
+        height: 110px;         /* 进一步缩小图片高度 */
+    }
+    
+    /* 卡片内容适配 */
+    .car-info {
+        padding: 10px;         /* 减小信息区内边距 */
+    }
+    
+    .car-title {
+        font-size: 14px;       /* 缩小标题字体 */
+        margin-bottom: 5px;
+    }
+    
+    .car-desc {
+        font-size: 11px;       /* 缩小描述字体 */
+        margin-bottom: 8px;
+    }
+    
+    .car-price {
+        font-size: 16px;       /* 缩小价格字体 */
+    }
+    
+    /* 分页组件适配：允许换行 */
+    .pagination {
+        width: 95%;            /* 分页组件宽度自适应 */
+        margin: 15px auto 20px auto;
+        flex-wrap: wrap;       /* 允许换行 */
+        gap: 5px;              /* 按钮间距 */
+    }
+    
+    .page-btn,
+    .page-num {
+        padding: 5px 8px;      /* 进一步缩小分页按钮 */
+        font-size: 12px;
+        min-width: 28px;
+    }
+    
+    .page-btn {
+        padding: 5px 12px;
+    }
+}
+
+
+/* 移动端下拉菜单样式 */
+.mobile-nav-menu {
+    display: none;                                    /* 默认隐藏菜单 */
+    position: absolute;                               /* 绝对定位，相对于父容器 */
+    top: 100%;                                       /* 从导航栏底部开始显示 */
+    right: 0;                                        /* 右对齐显示 */
+    background-color: #ffffff;                       /* 白色背景 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);       /* 添加阴影效果 */
+    z-index: 200;                                    /* 设置高层级确保显示在最上层 */
+    min-width: 200px;                                /* 设置最小宽度 */
+    border-radius: 4px;                              /* 添加圆角边框 */
+}
+
+/* 点击菜单按钮时显示下拉菜单 */
+.mobile-nav-menu.active {
+    display: block;                                  /* 切换为块级显示 */
+}
+
+/* 下拉菜单中的链接样式 */
+.mobile-nav-menu a {
+    display: block;                                  /* 设置为块级元素 */
+    color: #333333;                                  /* 深灰色文字 */
+    font-size: 16px;                                 /* 字体大小 */
+    padding: 12px 20px;                              /* 内边距 */
+    text-decoration: none;                           /* 去掉链接下划线 */
+    border-bottom: 1px solid #f0f0f0;                /* 添加分隔线 */
+    transition: background-color 0.3s;               /* 添加背景色过渡动画 */
+}
+
+/* 去掉最后一个菜单项的分隔线 */
+.mobile-nav-menu a:last-child {
+    border-bottom: none;
+}
+
+/* 菜单项悬停效果 */
+.mobile-nav-menu a:hover {
+    background-color: #f8f8f8;                       /* 悬停时背景变灰 */
+    color: #ff6600;                                 
 }
