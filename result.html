@@ -15,7 +15,11 @@
     let params = new URLSearchParams(location.search);
     let type = params.get("type");
     let year = params.get("year");
-
+    /*AI Usage Notes:During development, to ensure the search results are styled with a consistent CSS file, 
+    I decided to separate the search and result functions into two pages, 
+    implementing the search logic in result.html instead of search.html.However, this required passing 
+    the two input parameters to the second page. The AI provided a method to store 
+    the  type  and  year  parameters from the URL into variables.*/
     let cars = [
         {img: "白色宝马.jpg", model: "White BMW 3 Series", year: "2021", desc: "2021 | Beijing | 3.5k Miles", price: "$35,000"},
         {img: "保时捷.jpg", model: "Black Porsche Macan", year: "2022", desc: "2022 | Shanghai | 1.2k Miles", price: "$55,000"},
@@ -31,6 +35,11 @@
         {img: "雷克萨斯.jpg", model: "Grey Lexus LC500", year: "2021", desc: "2021 | Dongguan | 1.8k Miles", price: "$78,000"},
         {img: "玛莎拉蒂.jpg", model: "Silver Maserati GranTurismo", year: "2023", desc: "2023 | Beijing | 0.5k Miles", price: "$160,000"},
         {img: "小米.jpg", model: "Purple Xiaomi SU7", year: "2024", desc: "2024 | Jiaxing | 0.2k Miles", price: "$42,000"}
+        /*code source statement:Since there was no backend code available, I chose to directly copy the existing 
+        vehicle information from the Marketplace page for searching purposes.
+        (I attempted to scrape information from the Marketplace for searching, 
+        but failed to implement it successfully.)Therefore, the information in this code was 
+        provided by Zichun Hu, and Lixuan Feng only organized it into the required format.*/
     ];
 
     let filteredCars = cars.filter(car => {
