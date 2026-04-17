@@ -1,0 +1,143 @@
+/*Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="stylereglog.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="location.href='index.html'">home page</button>
+
+        <h2>registration</h2>
+        <form id="registerform">
+            <div>
+                <label>full name</label><br>
+                <input type="text" id="name" placeholder="letters and spaces only">
+                <div id="wrong name"></div>
+            </div>
+            <br>
+
+            <div>
+                <label>address</label><br>
+                <input type="text" id="address" placeholder="letters spaces numbers only">
+                <div id="wrong address"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>phone number</label><br>
+                <input type="text" id="phone" placeholder="Chinese mainland only">
+                <div id="wrong phone number"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>email</label><br>
+                <input type="text" id="email" placeholder="@xx.com or @xx.cn only">
+                <div id="wrong email"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>username</label><br>
+                <input type="text" id="username" placeholder="at least 6 letters and numbers">
+                <div id="wrong username"></div>
+            </div>
+            <br>
+            
+            <div>
+                <label>password</label><br>
+                <input type="password" id="password" placeholder="at least 6 letters and numbers">
+                <div id="wrong password"></div>
+            </div>
+            <br>
+
+            <button type="submit">register</button>
+        </form>
+
+        <br>
+        <button onclick="location.href='login.html'">already have an account? login here</button> 
+    </div>
+    <script>
+    const form =document.getElementById('registerform');
+    
+    const rules = {
+        name: /^[a-zA-Z\s]+$/,
+        address: /^[a-zA-Z0-9\s]+$/,
+        phone: /^1[3-9]\d{9}$/,
+        email: /^[a-zA-Z0-9_\-.]+@[a-zA-Z0-9_\-.]+\.(com|cn)$/,
+        username: /^[a-zA-Z0-9_]{6,}$/,
+        password: /^[a-zA-Z0-9_]{6,}$/
+    };
+
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+
+        /*AI Usage Notes:During development, 
+        I found that the page refreshes immediately 
+        after incorrect input, making the alert message 
+        disappear too quickly to read. I consulted AI 
+        about this issue, and it provided the revision in this line.*/
+
+        let name = document.getElementById('name').value;
+        let address = document.getElementById('address').value;
+        let phone = document.getElementById('phone').value;
+        let email = document.getElementById('email').value;
+        let username = document.getElementById('username').value;
+        let password = document.getElementById('password').value;
+        
+        let valid = true;
+
+        if(!rules.name.test(name)){
+            document.getElementById('wrong name').textContent = 'wrong name';
+            valid = false;
+        } else {
+            document.getElementById('wrong name').textContent = 'compliance name';
+        }
+
+        if(!rules.address.test(address)){
+            document.getElementById('wrong address').textContent = 'wrong address';
+            valid = false;
+        } else {
+            document.getElementById('wrong address').textContent = 'compliance address';
+        }
+
+        if(!rules.phone.test(phone)){
+            document.getElementById('wrong phone number').textContent = 'wrong phone number';
+            valid = false;
+        } else {
+            document.getElementById('wrong phone number').textContent = 'compliance phone number';
+        }
+
+        if(!rules.email.test(email)){
+            document.getElementById('wrong email').textContent = 'wrong email';
+            valid = false;
+        } else {
+            document.getElementById('wrong email').textContent = 'compliance email';
+        }
+
+        if(!rules.username.test(username)){
+            document.getElementById('wrong username').textContent = 'wrong username';
+            valid = false;
+        } else {
+            document.getElementById('wrong username').textContent = 'compliance username';
+        }
+
+        if(!rules.password.test(password)){
+            document.getElementById('wrong password').textContent = 'wrong password';
+            valid = false;
+        } else {
+            document.getElementById('wrong password').textContent = 'compliance password';
+        }
+
+        if (valid) {
+            alert("registration success, jumping to login page...");
+            window.location.href = "login.html"; 
+        }
+    });
+    </script>
+        
+</body>
+</html>

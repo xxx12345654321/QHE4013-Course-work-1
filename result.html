@@ -1,0 +1,71 @@
+/*Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <link rel="stylesheet" href="styleresult.css">
+</head>
+<body>
+ 
+    <div class="car-list" id="carList"></div>
+    <button onclick="location.href='search.html'">changing your conditions? click here</button>
+<script>
+
+    let params = new URLSearchParams(location.search);
+    let type = params.get("type");
+    let year = params.get("year");
+    /*AI Usage Notes:During development, to ensure the search results are styled with a consistent CSS file, 
+    I decided to separate the search and result functions into two pages, 
+    implementing the search logic in result.html instead of search.html.However, this required passing 
+    the two input parameters to the second page. The AI provided a method to store 
+    the  type  and  year  parameters from the URL into variables.*/
+    let cars = [
+        {img: "白色宝马.jpg", model: "White BMW 3 Series", year: "2021", desc: "2021 | Beijing | 3.5k Miles", price: "$35,000"},
+        {img: "保时捷.jpg", model: "Black Porsche Macan", year: "2022", desc: "2022 | Shanghai | 1.2k Miles", price: "$55,000"},
+        {img: "北京现代.jpg", model: "White Beijing Hyundai", year: "2020", desc: "2020 | Guangzhou | 4.8k Miles", price: "$16,500"},
+        {img: "本田思域.jpg", model: "White Honda Civic", year: "2019", desc: "2019 | Shenzhen | 6.0k Miles", price: "$14,000"},
+        {img: "别克.jpg", model: "Grey Buick Regal", year: "2021", desc: "2021 | Chengdu | 2.5k Miles", price: "$22,000"},
+        {img: "大众.jpg", model: "Black Volkswagen Passat", year: "2018", desc: "2018 | Hangzhou | 8.1k Miles", price: "$15,500"},
+        {img: "黑色宝马.jpg", model: "Black BMW X5", year: "2023", desc: "2023 | Wuhan | 0.8k Miles", price: "$65,000"},
+        {img: "黑色奔驰01.jpg", model: "Grey Mercedes-Benz A-Class", year: "2021", desc: "2021 | Nanjing | 3.2k Miles", price: "$28,000"},
+        {img: "黑色奔驰02.jpg", model: "Black Mercedes-Benz S-Class", year: "2022", desc: "2022 | Chongqing | 1.5k Miles", price: "$85,000"},
+        {img: "黑色路虎.jpg", model: "Black Land Rover Range Rover", year: "2023", desc: "2023 | Suzhou | 1.0k Miles", price: "$92,000"},
+        {img: "红旗.jpg", model: "Black Hongqi H9", year: "2022", desc: "2022 | Tianjin | 2.1k Miles", price: "$45,000"},
+        {img: "雷克萨斯.jpg", model: "Grey Lexus LC500", year: "2021", desc: "2021 | Dongguan | 1.8k Miles", price: "$78,000"},
+        {img: "玛莎拉蒂.jpg", model: "Silver Maserati GranTurismo", year: "2023", desc: "2023 | Beijing | 0.5k Miles", price: "$160,000"},
+        {img: "小米.jpg", model: "Purple Xiaomi SU7", year: "2024", desc: "2024 | Jiaxing | 0.2k Miles", price: "$42,000"}
+        /*code source statement:Since there was no backend code available, I chose to directly copy the existing 
+        vehicle information from the Marketplace page for searching purposes.
+        (I attempted to scrape information from the Marketplace for searching, 
+        but failed to implement it successfully.)Therefore, the information in this code was 
+        provided by Zichun Hu, and Lixuan Feng only organized it into the required format.*/
+    ];
+
+    let filteredCars = cars.filter(car => {
+        let matchType = car.model.toLowerCase().includes(type.toLowerCase());
+        let matchYear = year === "" || car.year === year;
+        return matchType && matchYear;
+    });
+
+    let carList = document.getElementById("carList");
+
+    filteredCars.forEach(car => {
+        carList.innerHTML += `
+            <div class="car-card">
+                <div class="car-image">
+                    <img src="${car.img}" alt="wrong picture path">
+                </div>
+                <div class="car-info">
+                    <div class="car-title">${car.model}</div>
+                    <div class="car-desc">${car.desc}</div>
+                    <div class="car-price">${car.price}</div>
+                </div>
+            </div>
+        `;
+    });
+</script>
+
+</body>
+</html>

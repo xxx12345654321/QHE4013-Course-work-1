@@ -1,0 +1,59 @@
+/*Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="stylereglog.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="location.href='index.html'">home page</button>
+
+        <h2>search</h2>
+        <form id="searchform">
+            <div>
+                <label>type of car</label><br>
+                <input type="text" id="type" placeholder="type you want">
+            </div>
+            <br>
+
+            <div>
+                <label>year</label><br>
+                <select id="year">
+                    <option value="">all year</option>
+                    <option value="2026">2026</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>         
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+            </div>
+            <br>
+
+            <button type="button" onclick="search()">search</button>
+        </form>
+    </div>
+
+    <script>
+    function search() {
+    
+        let type = document.getElementById('type').value;
+        let year = document.getElementById('year').value;
+        location.href = `result.html?type=${type}&year=${year}`;
+        /*AI Usage Notes:During development, to ensure the search results are styled with a consistent CSS file, 
+        I decided to separate the search and result functions into two pages, 
+        implementing the search logic in result.html instead of search.html.However, this required passing 
+        the two input parameters to the second page. The AI provided a method to store 
+        the  type  and  year  parameters from the URL into variables.*/
+    }
+    </script>
+</body>
+</html>

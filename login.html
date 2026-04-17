@@ -1,0 +1,71 @@
+/*Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="stylereglog.css">
+</head>
+<body>
+    <div class="container">
+        <button onclick="location.href='index.html'">home page</button>
+
+        <h2>login</h2>
+
+        <!--TA assistance notes:I originally thought it was 
+        impossible to implement the judgment without backend 
+        code. After asking Ms. Jiayu for help, she introduced 
+        me to the method of using a test account and password.-->
+
+        <p>testid:testID1    testpassword:key123456</p>
+
+        <form id="loginform">
+            <div>
+                <label>username</label><br>
+                <input type="text" id="username">
+            </div>
+            <br>
+            
+            <div>
+                <label>password</label><br>
+                <input type="password" id="password">
+            </div>
+            <br>
+
+            <button type="submit">login</button>
+        </form>
+        <br>
+        <button onclick="location.href='register.html'">no account? register here</button>
+    </div>
+
+    <script>
+    const loginform = document.getElementById("loginform");
+
+    loginform.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        /*AI Usage Notes:During development, 
+        I found that the page refreshes immediately 
+        after incorrect input, making the alert message 
+        disappear too quickly to read. I consulted AI 
+        about this issue, and it provided the revision in this line.*/
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const testid = "testID1";
+        const testpassword = "key123456";
+    
+        if(username!==testid){
+            alert("wrong username");
+        } else if(password!==testpassword){
+            alert("wrong password");
+        } else {
+            alert("login successful");
+            window.location.href = "add-car.html";
+        };
+    });
+    </script>
+</body>
+</html>
