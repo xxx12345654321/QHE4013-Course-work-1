@@ -20,7 +20,8 @@ body {
 }
 
 .car-list {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto 50px auto;
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +29,9 @@ body {
 }
 
 .car-card {
-    width: 285px;
+    flex: 1;
+    max-width: 285px;
+    min-width: 250px;
     margin-right: 20px;
     margin-bottom: 20px;
     background-color: #ffffff;
@@ -36,9 +39,6 @@ body {
     transition: transform 0.3s;
 }
 
-.car-card:nth-child(4n) {
-    margin-right: 0;
-}
 
 .car-card:hover {
     transform: translateY(-5px);
@@ -86,7 +86,8 @@ body {
 }
 
 button {
-  width: 50%;
+  width: 100%;
+  max-width: 175px;
   padding: 10px;
   background-color: #007bff;
   color: white;
