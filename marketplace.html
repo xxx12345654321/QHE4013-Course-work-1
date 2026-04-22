@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace - Used Car Trading Platform</title>
+    <link rel="stylesheet" href="marketplace.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <span class="site-name">AutoMall</span>
+        </div>
+        <div class="nav-menu-container">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html" style="color:#ff6600;">Marketplace</a>
+                <a href="search.html">Search</a>
+                <a href="login.html">Seller Entrance</a>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()"></div>
+            <!-- Move Navigation Menu -->
+            <div class="mobile-nav-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html" style="color:#ff6600;">Marketplace</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="filter-bar">
+        <span class="filter-active">All Cars (213661)</span>
+    </div>
+
+
+    <!-- Car information -->
+    <div class="car-list">
+        
+        <div class="car-card">
+            <div class="car-image"><img src="images/白色宝马.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">White BMW 3 Series</div>
+                <div class="car-desc">2021 | Beijing | 3.5k Miles</div>
+                <div class="car-price">$35,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/保时捷.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Black Porsche Macan</div>
+                <div class="car-desc">2022 | Shanghai | 1.2k Miles</div>
+                <div class="car-price">$55,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/北京现代.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">White Beijing Hyundai</div>
+                <div class="car-desc">2020 | Guangzhou | 4.8k Miles</div>
+                <div class="car-price">$16,500</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/本田思域.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">White Honda Civic</div>
+                <div class="car-desc">2019 | Shenzhen | 6.0k Miles</div>
+                <div class="car-price">$14,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/别克.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Grey Buick Regal</div>
+                <div class="car-desc">2021 | Chengdu | 2.5k Miles</div>
+                <div class="car-price">$22,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/大众.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Black Volkswagen Passat</div>
+                <div class="car-desc">2018 | Hangzhou | 8.1k Miles</div>
+                <div class="car-price">$15,500</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/黑色宝马.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Black BMW X5</div>
+                <div class="car-desc">2023 | Wuhan | 0.8k Miles</div>
+                <div class="car-price">$65,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/黑色奔驰01.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Grey Mercedes-Benz A-Class</div>
+                <div class="car-desc">2021 | Nanjing | 3.2k Miles</div>
+                <div class="car-price">$28,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/黑色奔驰02.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Black Mercedes-Benz S-Class</div>
+                <div class="car-desc">2022 | Chongqing | 1.5k Miles</div>
+                <div class="car-price">$85,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/黑色路虎.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Black Land Rover Range Rover</div>
+                <div class="car-desc">2023 | Suzhou | 1.0k Miles</div>
+                <div class="car-price">$92,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/红旗.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Black Hongqi H9</div>
+                <div class="car-desc">2022 | Tianjin | 2.1k Miles</div>
+                <div class="car-price">$45,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/雷克萨斯.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Grey Lexus LC500</div>
+                <div class="car-desc">2021 | Dongguan | 1.8k Miles</div>
+                <div class="car-price">$78,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/玛莎拉蒂.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Silver Maserati GranTurismo</div>
+                <div class="car-desc">2023 | Beijing | 0.5k Miles</div>
+                <div class="car-price">$160,000</div>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <div class="car-image"><img src="images/小米.jpg" alt="Car"></div>
+            <div class="car-info">
+                <div class="car-title">Purple Xiaomi SU7</div>
+                <div class="car-desc">2024 | Jiaxing | 0.2k Miles</div>
+                <div class="car-price">$42,000</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pagination Component -->
+    <div class="pagination">
+        <a href="#" class="page-btn prev-btn">上一页</a>
+        <a href="#" class="page-num active">1</a>
+        <a href="#" class="page-num">2</a>
+        <a href="#" class="page-num">3</a>
+        <a href="#" class="page-num">4</a>
+        <a href="#" class="page-num">5</a>
+        <span class="page-dots">...</span>
+        <a href="#" class="page-num">42</a>
+        <a href="#" class="page-btn next-btn">下一页</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2026 Used Car Trading Platform. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
