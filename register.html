@@ -1,4 +1,4 @@
-/*Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/
+<!-- Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/ -->
 <!DOCTYPE html>
 <html lang="en">
     <meta charset="UTF-8">
@@ -14,42 +14,42 @@
         <form id="registerform" action="register.php" method="POST">
             <div>
                 <label>full name</label><br>
-                <input type="text" id="name" placeholder="letters and spaces only">
+                <input type="text" id="name" name="name" placeholder="letters and spaces only">
                 <div id="wrong name"></div>
             </div>
             <br>
 
             <div>
                 <label>address</label><br>
-                <input type="text" id="address" placeholder="letters spaces numbers only">
+                <input type="text" id="address" name="address" placeholder="letters spaces numbers only">
                 <div id="wrong address"></div>
             </div>
             <br>
             
             <div>
                 <label>phone number</label><br>
-                <input type="text" id="phone" placeholder="Chinese mainland only">
+                <input type="text" id="phone" name="phone" placeholder="Chinese mainland only">
                 <div id="wrong phone number"></div>
             </div>
             <br>
             
             <div>
                 <label>email</label><br>
-                <input type="text" id="email" placeholder="@xx.com or @xx.cn only">
+                <input type="text" id="email" name="email" placeholder="@xx.com or @xx.cn only">
                 <div id="wrong email"></div>
             </div>
             <br>
             
             <div>
                 <label>username</label><br>
-                <input type="text" id="username" placeholder="at least 6 letters and numbers">
+                <input type="text" id="username" name="username" placeholder="at least 6 letters and numbers">
                 <div id="wrong username"></div>
             </div>
             <br>
             
             <div>
                 <label>password</label><br>
-                <input type="password" id="password" placeholder="at least 6 letters and numbers">
+                <input type="password" id="password" name="password" placeholder="at least 6 letters and numbers">
                 <div id="wrong password"></div>
             </div>
             <br>
@@ -132,11 +132,8 @@
             document.getElementById('wrong password').textContent = 'compliance password';
         }
 
-        if (valid) {//去掉自己写的跳转，让表单正常提交
-            // 去掉自己写的跳转，让表单正常提交
-            form.submit(); //提交表单给 register.php
-        } else {
-            e.preventDefault(); //验证失败时阻止提交
+        if (valid) {
+            form.submit();
         }
     });
     </script>
