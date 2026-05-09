@@ -33,13 +33,13 @@ require_once 'config.php';
 
     <div>
         <?php
-        // 检查数据库连接
+        // check connection
         if (!$conn) {
             echo "<p>数据库连接失败！</p>";
             exit;
         }
 
-        // 只有当用户提交了搜索才执行查询
+        // only execute query if user has submitted search
         if (isset($_GET['model']) || isset($_GET['colour'])) {
             $model = trim($_GET['model'] ?? '');
             $colour = trim($_GET['colour'] ?? '');
@@ -62,7 +62,6 @@ require_once 'config.php';
             if (mysqli_num_rows($result) > 0) {
                 while ($car = mysqli_fetch_assoc($result)) {
                     echo "<div class='car-card'>";
-                    // 关键：图片路径要和你项目里的一致
                     echo "<img src='images/{$car['car_image']}' alt='{$car['model']}'>";
                     echo "<h3>{$car['colour']} {$car['model']}</h3>";
                     echo "<p>Price: $" . number_format($car['price'], 0) . "</p>";
