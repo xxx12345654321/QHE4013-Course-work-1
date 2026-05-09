@@ -132,9 +132,11 @@
             document.getElementById('wrong password').textContent = 'compliance password';
         }
 
-        if (valid) {
-            alert("registration success, jumping to login page...");
-            window.location.href = "login.html"; 
+        if (valid) {//去掉自己写的跳转，让表单正常提交
+            // 去掉自己写的跳转，让表单正常提交
+            form.submit(); //提交表单给 register.php
+        } else {
+            e.preventDefault(); //验证失败时阻止提交
         }
     });
     </script>
