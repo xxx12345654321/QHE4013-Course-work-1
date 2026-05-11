@@ -204,3 +204,27 @@ p {
     
     }
 }
+/* 用户信息样式 */
+.user-info {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    text-align: right;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 14px;
+}
+
+.logout-btn {
+    color: #dc3545;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 4px 12px;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+}
