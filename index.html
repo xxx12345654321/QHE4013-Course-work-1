@@ -1,23 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AutoMall - Home</title>
-    <link rel="stylesheet" href="add-car-style.css">
+    <title>Used Car Trading Platform</title>
+    <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Welcome to AutoMall</h1>
-        <p>Your trusted marketplace for buying and selling cars.</p>
 
-        <div class="form-container">
-            <h2>Quick Actions</h2>
-            <div class="action-buttons">
-                <a href="add-car.html" class="btn">Add a Car for Sale</a>
-                <a href="test_login.php" class="btn">Seller Login</a>
+<body>
+
+    <!-- Top Navigation bar -->
+    <div class="header">
+        <!-- Left logo Area -->
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <span class="site-name">AutoMall</span>
+        </div>
+        <!-- Right-Navigation -->
+        <div class="nav-menu-container">
+            <div class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
+                <a href="search.html">Search</a>
+                <a href="login.html">Seller Entrance</a>
+              
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()"></div>
+            <div class="mobile-nav-menu" id="mobileMenu">
+                <a href="index.html">Home</a>
+                <a href="marketplace.html">Marketplace</a>
             </div>
         </div>
     </div>
+
+    <!-- Banner Area -->
+    <div class="banner">
+        <div class="banner-text">
+            <h1>PREMIUM USED CARS</h1>
+            <p>Smart & Reliable Vehicle Platform</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2026 Used Car Trading Platform. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            var menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
 </body>
+
 </html>

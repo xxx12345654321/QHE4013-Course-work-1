@@ -1,0 +1,47 @@
+/*Reference Book: A Detailed Guide to HTML5 + CSS3 + JavaScript (Practical Edition), 
+Tsinghua University Press, ISBN 978-7-302-56027-2, Chapters 16–17*/
+/*Reference videos for responsive layout【如何实现响应式网页设计-哔哩哔哩】 https://b23.tv/sCW2nXj*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*初始化页面默认*/
+
+body {
+  background-image: url(banner.jpg);
+  background-size: cover;/*图片铺满*/
+  background-position: center;/*图片居中，否则会偏，没办法整个页面都是这个图做背景*/
+  min-height: 100vh;/*占满整个屏幕高度，让下面不留空白*/
+  display: flex;/*使居中，否则登录框不在中间*/
+  justify-content: center;/*卡片水平居中，避免贴在左边*/
+  align-items: center;/*卡片垂直居中，避免贴在上面*/
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.85); /*白色半透明*/
+  width: 100%;
+  max-width: 400px;      
+  padding: 30px;           
+  border-radius: 5px;/*稍微圆角*/
+}/*白色半透明卡片，否则字看不清楚*/
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}/*标题在正中间*/
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 11px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}/*按钮蓝底白字*/
+
